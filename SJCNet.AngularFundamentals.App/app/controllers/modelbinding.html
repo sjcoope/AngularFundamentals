@@ -1,0 +1,19 @@
+﻿<div data-ng-controller="ModelBindingCtrl">
+    <h1>Model Binding Example</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Model Value</th>
+                <th>2 Way Binding</th>
+                <th>1 Way Binding</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" data-ng-model="text" /></td>
+                <td>{{text}}</td>
+                <td>{{::text}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

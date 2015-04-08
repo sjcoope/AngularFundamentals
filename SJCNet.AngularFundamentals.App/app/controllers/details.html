@@ -1,0 +1,17 @@
+﻿<div data-ng-controller="DetailsCtrl">
+    <h1>Details</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th data-ng-click="changeSort('id')">Id</th>
+                <th data-ng-click="changeSort('text')">Text</th>
+            </tr>
+        </thead>
+        <tbody data-ng-repeat="detail in details | orderBy:sortColumn">
+            <tr>
+                <td>{{detail.id}}</td>
+                <td>{{detail.text}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

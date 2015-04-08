@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS Fundamentals - Sample</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/custom.css" rel="stylesheet" />
+</head>
+<body data-ng-app="SJCNet.AngularFundamentals.App">
+
+    <div data-ng-include data-src="'app/controllers/layout/main.html'"></div>
+
+    <!-- Vendor Scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="app/app.module.js"></script>
+    <script src="app/controllers/layout/main.ctrl.js"></script>
+    <script src="app/controllers/layout/header.ctrl.js"></script>
+    <script src="app/controllers/layout/navigation.ctrl.js"></script>
+    <script src="app/controllers/details.ctrl.js"></script>
+    <script src="app/controllers/providers.ctrl.js"></script>
+    <script src="app/controllers/welcome.ctrl.js"></script>
+    <script src="app/controllers/modelbinding.ctrl.js"></script>
+    <script src="app/services/provider.service.js"></script>
+    <script src="app/services/details.service.js"></script>
+    <script src="app/controllers/directives.ctrl.js"></script>
+    <script src="app/directives/serviceItem.directive.js"></script>
+</body>
+</html>

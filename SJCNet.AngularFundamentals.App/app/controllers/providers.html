@@ -1,0 +1,33 @@
+﻿<div data-ng-controller="ProvidersCtrl">
+    <h1>Providers</h1>
+    <h3>Specialised Objects</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Text</th>
+            </tr>
+        </thead>
+        <tbody data-ng-repeat="item in specialisedObjects">
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.text}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Services</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Text</th>
+            </tr>
+        </thead>
+        <tbody data-ng-repeat="item in services">
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.text}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
